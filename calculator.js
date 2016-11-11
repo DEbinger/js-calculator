@@ -76,7 +76,12 @@ function multiply(x) {
    */
 
 function divide(x) {
+    if (typeof x === 'number'){
   _total /= x;
+  return _total;
+  }else{
+    throw new Error();
+  }
 }
   /**
    * Return the value stored at `memory`
