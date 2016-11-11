@@ -36,7 +36,12 @@ function getTotal(x) {
    * @param { Number } x
    */
 function add(x) {
+  if (typeof x === 'number'){
   _total += x;
+  return _total;
+  }else{
+    throw new Error();
+  }
 }
 
   /**
