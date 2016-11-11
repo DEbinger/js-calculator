@@ -49,7 +49,12 @@ function add(x) {
    * @param  { Number } x
    */
 function subtract(x) {
+  if (typeof x === 'number'){
   _total -= x;
+  return _total;
+  }else{
+    throw new Error();
+  }
 }
 
   /**
