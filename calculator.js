@@ -62,7 +62,12 @@ function subtract(x) {
    * @param  { Number } x
    */
 function multiply(x) {
+    if (typeof x === 'number'){
   _total *= x;
+  return _total;
+  }else{
+    throw new Error();
+  }
 }
 
   /**
